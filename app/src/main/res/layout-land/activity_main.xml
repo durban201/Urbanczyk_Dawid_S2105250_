@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- Dawid Urbanczyk S2105250 -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#FAFAFA"
+android:orientation="horizontal"
+android:padding="16dp">
+
+<!-- Left Side: List View -->
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="242dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:dividerHeight="8dp" />
+
+<!-- Right Side: Title, Details, Toggle Button, and Name -->
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/headerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:text="Formula 1 - Current Season"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Details Display -->
+    <TextView
+        android:id="@+id/detailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp"
+        android:background="#EEEEEE"
+        android:padding="8dp"
+        android:text="Details will appear here"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <!-- Button to Toggle Views -->
+    <Button
+        android:id="@+id/toggleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/design_default_color_primary"
+        android:text="Toggle Standings / Schedule"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <!-- Name Text -->
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="8dp"
+        android:background="#CCCCCC"
+        android:padding="8dp"
+        android:text="Dawid Urbanczyk - S2105250"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+</LinearLayout>
+
+</LinearLayout>
